@@ -10,8 +10,11 @@ def forecast_alert(request):
 def comparison(request):
     return render(request, 'weather/comparison.html')
 
-def comparison_alert(request):
-    return render(request, 'weather/comparison-alert.html')
+def map(request):
+    return render(request, 'weather/map.html')
 
 def index(request):
     return render(request, 'weather/index.html')
+  
+def search(request):
+    return render(request, 'weather/search.html')

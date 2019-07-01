@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Search</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+
+</head>
+<body>
+  
+	<div class="main">
+    <a href="/weather/">
+      <img class="topicon" style="left:3vw; top:4vh;" alt="" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMxLjQ5NCAzMS40OTQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMxLjQ5NCAzMS40OTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8cGF0aCBkPSJNMTAuMjczLDUuMDA5YzAuNDQ0LTAuNDQ0LDEuMTQzLTAuNDQ0LDEuNTg3LDBjMC40MjksMC40MjksMC40MjksMS4xNDMsMCwxLjU3MWwtOC4wNDcsOC4wNDdoMjYuNTU0ICBjMC42MTksMCwxLjEyNywwLjQ5MiwxLjEyNywxLjExMWMwLDAuNjE5LTAuNTA4LDEuMTI3LTEuMTI3LDEuMTI3SDMuODEzbDguMDQ3LDguMDMyYzAuNDI5LDAuNDQ0LDAuNDI5LDEuMTU5LDAsMS41ODcgIGMtMC40NDQsMC40NDQtMS4xNDMsMC40NDQtMS41ODcsMGwtOS45NTItOS45NTJjLTAuNDI5LTAuNDI5LTAuNDI5LTEuMTQzLDAtMS41NzFMMTAuMjczLDUuMDA5eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+    </a>
+    <div class="row">
+      <img class="topicon" style="top:4vh; left:14vw; height:7vw; width:7vw" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyLjk2NiA1Mi45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUyLjk2NiA1Mi45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8cGF0aCBkPSJNNTEuNzA0LDUxLjI3M0wzNi44NDUsMzUuODJjMy43OS0zLjgwMSw2LjEzOC05LjA0MSw2LjEzOC0xNC44MmMwLTExLjU4LTkuNDItMjEtMjEtMjFzLTIxLDkuNDItMjEsMjFzOS40MiwyMSwyMSwyMSAgYzUuMDgzLDAsOS43NDgtMS44MTcsMTMuMzg0LTQuODMybDE0Ljg5NSwxNS40OTFjMC4xOTYsMC4yMDUsMC40NTgsMC4zMDcsMC43MjEsMC4zMDdjMC4yNSwwLDAuNDk5LTAuMDkzLDAuNjkzLTAuMjc5ICBDNTIuMDc0LDUyLjMwNCw1Mi4wODYsNTEuNjcxLDUxLjcwNCw1MS4yNzN6IE0yMS45ODMsNDBjLTEwLjQ3NywwLTE5LTguNTIzLTE5LTE5czguNTIzLTE5LDE5LTE5czE5LDguNTIzLDE5LDE5ICBTMzIuNDU5LDQwLDIxLjk4Myw0MHoiIGZpbGw9IiMwMDAwMDAiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+      <input onblur="window.location.href='../forecast/alert'"/>
+    </div>
+    <a href="/weather/map" class="searchpagetext">looking for sunny places?</a>
+  </div>
+</body>
+</html>
